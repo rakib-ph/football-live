@@ -9,7 +9,8 @@ body {
 }
 
 .header {
-        display: flex;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
         background-color: #2d25a0;
         color: cornsilk;
         width: 100%;
@@ -36,7 +37,7 @@ body {
         transition-delay: 100ms;
 }
 
-.header img {
+.right img {
         width: 100%;
 }
 
@@ -79,19 +80,19 @@ body {
 }
 
 .footer {
+        display: grid;
+        grid-template-rows: 4fr 4fr 4fr;
         width: 100%;
-        text-align: center;
-        margin-top: 100px;
+        margin-top: 150px;
 }
 
-.img {
-        width: 10%;
+.image {
         display: flex;
 }
 
-.img div {
-        width: 100%;
+.img {
         margin: auto;
+        padding-right: 70px;
 }
 
 .footer p {
@@ -101,6 +102,7 @@ body {
 .ra {
         width: 100%;
         display: flex;
+        padding-bottom: 90px;
 }
 
 .na {
@@ -152,4 +154,15 @@ body {
         background: #ff0000;
         border-radius: 20%;
         transition: 100ms;
+}
+
+.copyright {
+        display: flex;
+        margin-bottom: 100px;
+        position: relative;
+        bottom: 50%;
+}
+
+.pg {
+        margin: auto;
 }
